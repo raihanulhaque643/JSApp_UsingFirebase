@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+        <title>Databases</title>
+</head>
+<body>
+    
+    <div class="container my-5">
+        <h2>Recipes</h2>
+        <ul>
+        </ul>
+        <form>
+            <label for="recipe">Add a new recipe</label>
+            <div class="input-group">
+                <input type="text" class="form-control" id="recipe" required>
+                <div class="input-group-append">
+                    <input type="submit" value="Add" class="btn btn-outline-secondary">
+                </div>
+            </div>
+        </form>
+    </div>
+
+    
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+<script src="https://www.gstatic.com/firebasejs/7.14.1/firebase-app.js"></script>
+
+<!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+<script src="https://www.gstatic.com/firebasejs/7.14.1/firebase-firestore.js"></script>
+
+<script>
+  // Your web app's Firebase configuration
+  var firebaseConfig = {
+    apiKey: "AIzaSyBSUDjpkluIP9PgQa6O6nxtNezkx22sZdk",
+    authDomain: "modern-js-a34eb.firebaseapp.com",
+    databaseURL: "https://modern-js-a34eb.firebaseio.com",
+    projectId: "modern-js-a34eb",
+    storageBucket: "modern-js-a34eb.appspot.com",
+    messagingSenderId: "597235460018",
+    appId: "1:597235460018:web:e887a6ba3d2aed71f3e6ab",
+    measurementId: "G-665Q5YL4J3"
+  };
+  // Initialize Firebase
+  firebase.initializeApp(firebaseConfig);
+  const db = firebase.firestore();
+</script>
+    <script src="sandbox.js"></script>
+</body>
+</html>
